@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-degrade{
+    width: 100%;
+    padding: 396px 0;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, purple, red, rgb(255, 89, 117));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s  infinite alternate;
+}
+.box-degrade h1{
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
